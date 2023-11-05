@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Online Library Management System</title>
+</head>
+<body>
+    <header>
+        <h1>Online Library Management System</h1>
+    </header>
+    <main>
+        <aside class="book-list">
+            <h2>Book List</h2>
+            <ul id="book-list">
+                <ul>Book 1<p>Cybersecurity Essentials:By Andrew S. Tanenbaum<br>ISBN:12900912099</p></ul>
+                <ul>Book 2<p>Mastering Web Development:By Steve McConnell<br>ISBN:48363656</p></ul>
+                <ul>Book 3<p>Ethical Hacking:By Douglas Crockford<br>ISBN:6576857687867</p></ul>
+            </ul>
+        </aside>
+        <section class="add-book">
+            <h2>Add New Book</h2>
+            <form id="add-book-form">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" required>
+                <label for="ISBN">ISBN:</label>
+                <input type="text" id="ISBN" name="ISBN" required>
+                <button type="submit">Add Book</button>
+            </form>
+        </section>
+        <aside class="search">
+            <h2>Search for Books</h2>
+            <input type="text" id="search-box" placeholder="Search by title,author or ISBN">
+            <button id="search-button">Search</button>
+            <ul id="search-results">
+               
+            </ul>
+        </aside>
+    </main>
+</body>
+</html>
